@@ -27,49 +27,49 @@ $(function() {
 
     /* Insert News to DOM  */
 
-    function insertContent1(news) {
-            var img1 = $('.num1 img');
-            img1.attr('src', news[0].urlToImage);
+    function insertContent0(news) {
+            var img0 = $('.num1 img');
+            img0.attr('src', news[0].urlToImage);
 
-            var url_img1 = $('.num1 .news_img_link');
-            url_img1.attr('href', news[0].url);
+            var url_img0 = $('.num1 .news_img_link');
+            url_img0.attr('href', news[0].url);
 
-            var title1 = $('.num1 h3');
-            title1.text(news[0].title);
+            var title0 = $('.num1 h3');
+            title0.text(news[0].title);
 
-            var url_title1 = $('.num1 .news_title_link');
-            url_title1.attr('href', news[0].url);
+            var url_title0 = $('.num1 .news_title_link');
+            url_title0.attr('href', news[0].url);
 
-            var description1 = $('.num1 .news_description');
-            description1.text(news[0].description);
+            var description0 = $('.num1 .news_description');
+            description0.text(news[0].description);
 
-            var author1 = $('.num1 .news_author');
-            author1.text('Author: '+news[0].author);
+            var author0 = $('.num1 .news_author');
+            author0.text('Author: '+news[0].author);
 
-            var date1 = $('.num1 .news_date');
-            date1.text('Publicated: '+news[0].publishedAt);
+            var date0 = $('.num1 .news_date');
+            date0.text('Publicated: '+news[0].publishedAt);
     }
-        function insertContent2(news) {
-            var img2 = $('.num2 img');
-            img2.attr('src', news[1].urlToImage);
+        function insertContent1(news) {
+            var img1 = $('.num2 img');
+            img1.attr('src', news[1].urlToImage);
 
-            var url_img2 = $('.num2 .news_img_link');
-            url_img2.attr('href', news[1].url);
+            var url_img1 = $('.num2 .news_img_link');
+            url_img1.attr('href', news[1].url);
 
-            var title2 = $('.num2 h3');
-            title2.text(news[1].title);
+            var title1 = $('.num2 h3');
+            title1.text(news[1].title);
 
-            var url_title2 = $('.num2 .news_title_link');
-            url_title2.attr('href', news[1].url);
+            var url_title1 = $('.num2 .news_title_link');
+            url_title1.attr('href', news[1].url);
 
-            var description2 = $('.num2 .news_description');
-            description2.text(news[1].description);
+            var description1 = $('.num2 .news_description');
+            description1.text(news[1].description);
 
-            var author2 = $('.num2 .news_author');
-            author2.text('Author: '+news[1].author);
+            var author1 = $('.num2 .news_author');
+            author1.text('Author: '+news[1].author);
 
-            var date2 = $('.num2 .news_date');
-            date2.text('Publicated: '+news[1].publishedAt);
+            var date1 = $('.num2 .news_date');
+            date1.text('Publicated: '+news[1].publishedAt);
     }
 
   /* Load news and insert them into the DOM*/
@@ -78,8 +78,8 @@ $(function() {
         $.ajax({
             url: techUrl
         }).done(function(response){
+    		insertContent0(response.articles);
     		insertContent1(response.articles);
-    		insertContent2(response.articles);
             insertContentArr(response.articles);
     	 }).fail(function(error) {
            console.log(error);
