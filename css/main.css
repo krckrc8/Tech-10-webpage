@@ -166,7 +166,7 @@ section img {
 
 }
 .news_content h3 {
-    font-size: 28px;
+    font-size: 22px;
     padding: 12px;
 }
 .news_title_link {
@@ -181,7 +181,7 @@ section img {
     text-shadow: 0px 0px 1px white;
 }
 .news_description {
-    font-size: 18px;
+    font-size: 16px;
     padding: 12px;
 }
 .news_author_icon{
@@ -191,18 +191,19 @@ section img {
     margin-left: 12px;
 }
 .news_author {
-    font-size: 16px;
+    font-size: 12px;
     color: #fbc25a;
     padding: 12px 12px 12px 0;
     display: inline-block;
 }
 .news_url {
-    font-size: 16px;
+    font-size: 12px;
     color: #44b85f;  
     margin-left: 30%;
     display: inline-block;    
 }
-.news_date{
+.news_date {
+    font-size: 12px;
     padding: 12px;
 }
 .comments {
@@ -227,8 +228,8 @@ footer .container {
     justify-content: flex-end;
     align-items: center;
     background-color: rgba(66, 133, 244, 0.8);
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
     //border-top: 5px solid #414141;     
 }
 footer span{
