@@ -4,6 +4,11 @@ $(function() {
     comments_btn_0.on('click', function(){
         comments_plugin_0.toggle();
     });
+    var comments_plugin_1 = $ ('#f820e4f3_1499171436');
+    var comments_btn_1 = $('.num1 div.comments');
+    comments_btn_1.on('click', function(){
+        comments_plugin_1.toggle();
+    });
     
     
     
