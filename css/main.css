@@ -209,12 +209,15 @@ section img {
 .comments {
     width: 97%;
     height: 35px;
-    margin-left: 2%;
+    margin-left: 1%;
     margin-top: 5%;
     background-color: rgb(66, 133, 244);
     text-align: center;
     line-height: 32px;
     font-size: 30px;    
+}
+.powr-comments {
+    display: none;
 }
 
 /*------------------------FOOTER---------------------------------*/

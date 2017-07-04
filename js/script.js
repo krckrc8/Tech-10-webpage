@@ -1,9 +1,14 @@
 $(function() {
-
-  //variables for main ul list
-  var newsLists = $('.tech-news');
-  //variables for url
-  var techUrl = 'https://newsapi.org/v1/articles?source=techradar&sortBy=latest&apiKey=52e7052a3e1341c8b763300db97b5a34';
+    var comments_plugin_0 = $ ('#a95a667d_1499170350');
+    var comments_btn_0 = $('.num0 div.comments');
+    comments_btn_0.on('click', function(){
+        comments_plugin_0.toggle();
+    })
+    
+    
+    
+    //variables for url
+    var techUrl = 'https://newsapi.org/v1/articles?source=techradar&sortBy=latest&apiKey=52e7052a3e1341c8b763300db97b5a34';
 
     /* Create my new arrays for Loops form API*/
 
