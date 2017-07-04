@@ -209,13 +209,11 @@ section img {
     width: 97%;
     height: 35px;
     margin-left: 2%;
-    margin-top: 10%;
+    margin-top: 5%;
     background-color: rgb(66, 133, 244);
-}
-.comments {
     text-align: center;
     line-height: 32px;
-    font-size: 30px;
+    font-size: 30px;    
 }
 
 /*------------------------FOOTER---------------------------------*/
