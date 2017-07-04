@@ -156,17 +156,29 @@ section .news {
 section img {
     height: 350px;
     width: 350px;
+    margin: 5px;
     object-fit: cover;
     float: left;
 }
 .news_content{
     float: left;
-    width: 61%;
+    width: 60%;
 
 }
 .news_content h3 {
     font-size: 28px;
     padding: 12px;
+}
+.news_title_link {
+    text-decoration: none;
+    color:  #dddddd;
+}
+.news_title_link :visited{
+    text-decoration: none;
+    color:  #dddddd;
+}
+.news_title_link :hover{
+    text-shadow: 0px 0px 1px white;
 }
 .news_description {
     font-size: 18px;
@@ -194,9 +206,10 @@ section img {
     padding: 12px;
 }
 .comments {
-    width: 95%;
+    width: 97%;
     height: 35px;
     margin-left: 2%;
+    margin-top: 10%;
     background-color: rgb(66, 133, 244);
 }
 .comments {
