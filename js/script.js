@@ -3,7 +3,7 @@ $(function() {
     var comments_btn_0 = $('.num0 div.comments');
     comments_btn_0.on('click', function(){
         comments_plugin_0.toggle();
-    })
+    });
     
     
     
