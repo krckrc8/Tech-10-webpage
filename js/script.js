@@ -1,4 +1,5 @@
 $(function() {
+    /*Event on Comment Buttons -show conversation-*/
     var comments_plugin_0 = $ ('#a95a667d_1499170350');
     var comments_btn_0 = $('.num0 div.comments');
     comments_btn_0.on('click', function(){
@@ -9,9 +10,50 @@ $(function() {
     comments_btn_1.on('click', function(){
         comments_plugin_1.toggle();
     });
+    var comments_plugin_2 = $ ('#4057b1cd_1499171560');
+    var comments_btn_2 = $('.num2 div.comments');
+    comments_btn_2.on('click', function(){
+        comments_plugin_2.toggle();
+    });
+    var comments_plugin_3 = $ ('#4a8024a6_1499172683');
+    var comments_btn_3 = $('.num3 div.comments');
+    comments_btn_3.on('click', function(){
+        comments_plugin_3.toggle();
+    });
+    var comments_plugin_4 = $ ('#891cc0f1_1499172819');
+    var comments_btn_4 = $('.num4 div.comments');
+    comments_btn_4.on('click', function(){
+        comments_plugin_4.toggle();
+    });
+    var comments_plugin_5 = $ ('#4fd98e7a_1499172964');
+    var comments_btn_5 = $('.num5 div.comments');
+    comments_btn_5.on('click', function(){
+        comments_plugin_5.toggle();
+    });
+    var comments_plugin_6 = $ ('#5d43907f_1499173037');
+    var comments_btn_6 = $('.num6 div.comments');
+    comments_btn_6.on('click', function(){
+        comments_plugin_6.toggle();
+    });
+    var comments_plugin_7 = $ ('#d584ee58_1499173087');
+    var comments_btn_7 = $('.num7 div.comments');
+    comments_btn_7.on('click', function(){
+        comments_plugin_7.toggle();
+    });
+    var comments_plugin_8 = $ ('#5f092104_1499173152');
+    var comments_btn_8 = $('.num8 div.comments');
+    comments_btn_8.on('click', function(){
+        comments_plugin_8.toggle();
+    });
+    var comments_plugin_9 = $ ('#57f13460_1499173285');
+    var comments_btn_9 = $('.num9 div.comments');
+    comments_btn_9.on('click', function(){
+        comments_plugin_9.toggle();
+    });
     
     
     
+    //-------------AJAX------------------
     //variables for url
     var techUrl = 'https://newsapi.org/v1/articles?source=techradar&sortBy=latest&apiKey=52e7052a3e1341c8b763300db97b5a34';
 
