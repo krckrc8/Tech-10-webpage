@@ -33,17 +33,17 @@ $(function() {
        }
     }
     
+    /*---Function calculate hours from post's publicated---*/
+    
     function datePublicatedPost (date){
         var date_start = new Date(date);
         var hours = date_start.getHours();
         var minutes = date_start.getMinutes();
-        console.log("post h:"+hours);
-        console.log("post min:"+minutes);
+        
         var date_today = new Date();
         var hours_today = date_today.getHours();
         var minutes_today = date_today.getMinutes();
-        console.log("post h:"+hours_today);
-        console.log("post min:"+minutes_today);
+        
         if(hours*60+minutes >= hours_today*60+minutes_today){
             return Math.floor((hours_today*60+minutes_today + 24*60-hours*60-minutes)/60);
         }else{
@@ -53,7 +53,7 @@ $(function() {
     
     
     
-    /* Insert News to DOM  */
+    /*--- Insert News to DOM ---*/
 
     /*--------------POST NO 0-----------------*/
     function insertContent0(news) {
@@ -76,9 +76,8 @@ $(function() {
             author0.text('Author: '+news[0].author);
 
             var date0 = $('.num0 .news_date');
-            date0.text('Publicated: '+news[0].publishedAt);
-            datePublicatedPost (news[0].publishedAt);
-
+            date0.text('Publicated: '+datePublicatedPost (news[0].publishedAt)+' h ago');
+            
     }
     
     /*--------------POST NO 1-----------------*/
@@ -102,7 +101,7 @@ $(function() {
             author1.text('Author: '+news[1].author);
 
             var date1 = $('.num1 .news_date');
-            date1.text('Publicated: '+news[1].publishedAt);
+            date1.text('Publicated: '+datePublicatedPost (news[1].publishedAt)+' h ago');
     }
     
     /*--------------POST NO 2-----------------*/
@@ -126,7 +125,7 @@ $(function() {
             author2.text('Author: '+news[2].author);
 
             var date2 = $('.num2 .news_date');
-            date2.text('Publicated: '+news[2].publishedAt);
+            date2.text('Publicated: '+datePublicatedPost (news[2].publishedAt)+' h ago');
     }    
     
     /*--------------POST NO 3-----------------*/
@@ -150,7 +149,7 @@ $(function() {
             author3.text('Author: '+news[3].author);
 
             var date3 = $('.num3 .news_date');
-            date3.text('Publicated: '+news[3].publishedAt);
+            date3.text('Publicated: '+datePublicatedPost (news[3].publishedAt)+' h ago');
     }
     
     /*--------------POST NO 4-----------------*/
@@ -174,7 +173,7 @@ $(function() {
             author4.text('Author: '+news[4].author);
 
             var date4 = $('.num4 .news_date');
-            date4.text('Publicated: '+news[4].publishedAt);
+            date4.text('Publicated: '+datePublicatedPost (news[4].publishedAt)+' h ago');
     }
     
     /*--------------POST NO 5-----------------*/
@@ -198,7 +197,7 @@ $(function() {
             author5.text('Author: '+news[5].author);
 
             var date5 = $('.num5 .news_date');
-            date5.text('Publicated: '+news[5].publishedAt);
+            date5.text('Publicated: '+datePublicatedPost (news[5].publishedAt)+' h ago');
     }   
     
     /*--------------POST NO 6-----------------*/
@@ -222,7 +221,7 @@ $(function() {
             author6.text('Author: '+news[6].author);
 
             var date6 = $('.num6 .news_date');
-            date6.text('Publicated: '+news[6].publishedAt);
+            date6.text('Publicated: '+datePublicatedPost (news[6].publishedAt)+' h ago');
     } 
     
     /*--------------POST NO 7-----------------*/
@@ -246,7 +245,7 @@ $(function() {
             author7.text('Author: '+news[7].author);
 
             var date7 = $('.num7 .news_date');
-            date7.text('Publicated: '+news[7].publishedAt);
+            date7.text('Publicated: '+datePublicatedPost (news[7].publishedAt)+' h ago');
     }
     
     /*--------------POST NO 8-----------------*/
@@ -270,7 +269,7 @@ $(function() {
             author8.text('Author: '+news[8].author);
 
             var date8 = $('.num8 .news_date');
-            date8.text('Publicated: '+news[8].publishedAt);
+            date8.text('Publicated: '+datePublicatedPost (news[8].publishedAt)+' h ago');
     }
     
     /*--------------POST NO 9-----------------*/
@@ -294,7 +293,7 @@ $(function() {
             author9.text('Author: '+news[9].author);
 
             var date9 = $('.num9 .news_date');
-            date9.text('Publicated: '+news[9].publishedAt);
+            date9.text('Publicated: '+datePublicatedPost (news[9].publishedAt)+' h ago');
     }
 
   /* Load news and insert them into the DOM*/
