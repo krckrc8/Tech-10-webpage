@@ -92,6 +92,8 @@ body {
 .fixed {
     position: fixed;
     top: 0;
+    width: 100%;
+    background-image: url("../img/footer_lodyas.png");
 }
 
 /*--------------------NAV SECOND-----------------------------*/

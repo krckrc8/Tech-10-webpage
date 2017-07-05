@@ -9,17 +9,20 @@ $(function() {
     });
     
     /*---Sticy nav---*/
-    /*var navOffset = $('.logo .container').offset().top;
+    var navOffset = $('nav').offset().top;
+    
+    $('nav').wrap('<div class="nav-placeholder"></div>');
+    $('.nav-placeholder').height($('nav').outerHeight());
     
     $(window).scroll(function(){
         var scrollPos = $(window).scrollTop();
         
         if(scrollPos >= navOffset){
-            $('.logo .container').addClass("fixed");
+            $('nav').addClass("fixed");
         }else{
-            $('.logo .container').removeClass("fixed");
+            $('nav').removeClass("fixed");
         }
-    });*/
+    });
 
     
     //-------------AJAX------------------
