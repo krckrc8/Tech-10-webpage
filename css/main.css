@@ -154,7 +154,7 @@ section .news {
     margin-bottom: 20px;
 }
 
-section img {
+.news img {
     height: 350px;
     width: 350px;
     margin: 5px;
@@ -162,8 +162,9 @@ section img {
     float: left;
 }
 
-.news_img_link div {
-    overflow: hidden;
+.news img:hover {
+    transform: scale(1.015);
+    opacity: 0.8;
 }
 
 .news_content{
@@ -184,7 +185,8 @@ section img {
     color:  #dddddd;
 }
 .news_title_link :hover{
-    text-shadow: 0px 0px 1px white;
+    //text-shadow: 0px 0px 1px white;
+    opacity: 0.8;
 }
 .news_description {
     font-size: 16px;
@@ -221,6 +223,9 @@ section img {
     text-align: center;
     line-height: 32px;
     font-size: 30px;    
+}
+.comments:hover {
+    opacity: 0.8;
 }
 .powr-comments {
     display: none;
