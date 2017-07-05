@@ -7,6 +7,19 @@ $(function() {
     comments_btn_all.on('click', function(){
         $(this).next().toggle(400);
     });
+    
+    /*---Sticy nav---*/
+    /*var navOffset = $('.logo .container').offset().top;
+    
+    $(window).scroll(function(){
+        var scrollPos = $(window).scrollTop();
+        
+        if(scrollPos >= navOffset){
+            $('.logo .container').addClass("fixed");
+        }else{
+            $('.logo .container').removeClass("fixed");
+        }
+    });*/
 
     
     //-------------AJAX------------------
