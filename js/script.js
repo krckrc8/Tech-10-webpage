@@ -32,7 +32,27 @@ $(function() {
            newArr_published.push(news[i].publishedAt);
        }
     }
-
+    
+    function datePublicatedPost (date){
+        var date_start = new Date(date);
+        var hours = date_start.getHours();
+        var minutes = date_start.getMinutes();
+        console.log("post h:"+hours);
+        console.log("post min:"+minutes);
+        var date_today = new Date();
+        var hours_today = date_today.getHours();
+        var minutes_today = date_today.getMinutes();
+        console.log("post h:"+hours_today);
+        console.log("post min:"+minutes_today);
+        if(hours*60+minutes >= hours_today*60+minutes_today){
+            return Math.floor((hours_today*60+minutes_today + 24*60-hours*60-minutes)/60);
+        }else{
+            return Math.floor((hours_today*60+minutes_today -hours*60-minutes)/60)
+        }
+    };
+    
+    
+    
     /* Insert News to DOM  */
 
     /*--------------POST NO 0-----------------*/
@@ -57,6 +77,8 @@ $(function() {
 
             var date0 = $('.num0 .news_date');
             date0.text('Publicated: '+news[0].publishedAt);
+            datePublicatedPost (news[0].publishedAt);
+
     }
     
     /*--------------POST NO 1-----------------*/
@@ -297,7 +319,8 @@ $(function() {
         })
     }
   loadNews();
-
+    
+  
 
 
 //nie kasować
