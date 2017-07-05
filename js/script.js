@@ -5,7 +5,7 @@ $(function() {
     var comments_btn_all = $('.comments');
     
     comments_btn_all.on('click', function(){
-        $(this).next().toggle(500);
+        $(this).next().toggle(400);
     });
 
     
