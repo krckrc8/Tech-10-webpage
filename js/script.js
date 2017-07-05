@@ -1,5 +1,8 @@
 $(function() {
+    
+    
     /*Event on Comment Buttons -show conversation-*/
+    
     var comments_plugin_0 = $ ('#a95a667d_1499170350');
     var comments_btn_0 = $('.num0 div.comments');
     comments_btn_0.on('click', function(){
@@ -51,7 +54,27 @@ $(function() {
         comments_plugin_9.toggle();
     });
     
+    /*Event on Imgs -zooming-*/
     
+    var news_img_0 = $('.num0 img');
+    news_img_0.on('hover', function(){
+        console.log('ok');
+        $(this).css({
+            transform: "scale(1.05)",
+        });
+    });
+    
+   /* .animate({
+            transform: "scale(1.05)",
+        },500);*/
+    
+    /*.animate({
+    width: "70%",
+    opacity: 0.4,
+    marginLeft: "0.6in",
+    fontSize: "3em",
+    borderWidth: "10px"
+  }, 1500 );*/
     
     //-------------AJAX------------------
     //variables for url

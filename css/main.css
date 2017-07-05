@@ -153,6 +153,7 @@ section .news {
     background-color: rgba(255, 255, 255, 0.08);
     margin-bottom: 20px;
 }
+
 section img {
     height: 350px;
     width: 350px;
@@ -160,6 +161,11 @@ section img {
     object-fit: cover;
     float: left;
 }
+
+.news_img_link div {
+    overflow: hidden;
+}
+
 .news_content{
     float: left;
     width: 60%;
