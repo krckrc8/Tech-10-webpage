@@ -23,7 +23,13 @@ $(function() {
             $('nav').removeClass("fixed");
         }
     });
-
+    
+    /*---Hamburger MENU---*/
+    var hamb = $('.hamburger');
+    var mobile_tabs = $('.tabs');
+    hamb.on('click', function(){
+        mobile_tabs.slideToggle(700);
+    })
     
     //-------------AJAX------------------
     //variables for url
