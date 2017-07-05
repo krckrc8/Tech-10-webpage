@@ -1,3 +1,4 @@
+/*---------------RESET---------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -10,45 +11,35 @@
 }
 
 body {
-        background-image: url("../img/footer_lodyas.png");
+    background-image: url("../img/footer_lodyas.png");
 }
 
+/*---------------Page-------------------*/
 .wrapper{
-    //height: 100vh;
-    //width: 100vw;
-
 }
+
 .container{
     max-width: 960px;
     margin: 0 auto;
 }
 
 /*---------------LOGO---------------------*/
-.logo{
-    //height: 15%;
-}
-
 .logo .container {
-    //height: 100%;
-    background-size: cover;    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    text-align: center;
 }
 
 .logo h1 {
-    text-align: center;
+    display: inline-block;
     font-family: 'Julius Sans One', cursive;
-    text-shadow: 2px 2px 4px #125dc3;
+    color: #bebebe;
+    text-shadow: 3px 3px black;
     font-size: 70px;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #292424;
 }
 
 .logo i {
     font-size: 70px;
-    
 }
 
 /*-----------------TABY--------------------*/
@@ -68,7 +59,7 @@ body {
     display: inline-block;
     width: 150px;
     text-decoration: none;
-    color: white;
+    color: #dddddd;
     line-height: 36px;
 }
 
@@ -117,25 +108,31 @@ body {
     text-align: center;
 }
 
-.nav_second a {
-    font-size: 16px;
+.nav_second p {
+    font-size: 18px;
+    line-height: 30px;
+    display: inline-block;
+    color: #dddddd;
+    text-shadow: 1px 1px black;
+    padding: 5px 10px 5px 10px;
+}
+
+.nav_second i {
+    font-size: 20px;
     line-height: 30px;
     display: inline-block;
     text-decoration: none;
-    color: white;
+    color: #dddddd;
     text-shadow: 1px 1px black;
+}
+
+.nav_second li:nth-child(1) {
     border-right: 1px dashed black;
-    padding-left: 15px;
-    padding-right: 15px;
+}
+.nav_second li:nth-child(2) {
+    border-right: 1px dashed black;
 }
 
-.nav_second li:first-child {
-    border-left: 1px dashed black;
-}
-
-.nav_second li:first-child a {
-    
-}
 /*---------------------SECTION--------------------------------*/
 section .container {
     color: #dddddd;
@@ -228,7 +225,6 @@ section .container {
 
 /*------------------------FOOTER---------------------------------*/
 footer{
-    //height: 4%;
     background-color: rgba(66, 133, 244, 0.5);
 }
 
@@ -239,12 +235,17 @@ footer .container {
     background-color: rgba(66, 133, 244, 0.8);
 }
 footer span{
-    font-family: 'Barrio', cursive;
+    font-family: 'Julius Sans One', cursive;
     font-size: 28px;
-    margin-right: 90px;
+    color: #dddddd;
+    text-shadow: 1px 1px black;
+    margin-right: 10%;
+    padding: 20px 0;
 }
 footer p{
-    font-size: 14px;
+    font-size: 15px;
+    color: #dddddd;
+    text-shadow: 1px 1px black;
     margin-right: 90px;
 }
 
