@@ -319,12 +319,22 @@ footer .footer_2{
     }
     
     /*---news---*/
-    #main_news {
+    .news {
+        text-align: center;
+    }
+    .news_content{
+        float: none;
+        display: block;
+        width: 100%;
     }
     
     .news img {
         width: 280px;
         height: 280px;
+        float: none;
+    }
+    a.news_img_link{
+        display: inline-block;
     }
 }
 
