@@ -256,6 +256,7 @@ footer .footer_1{
 footer span{
     font-family: 'Julius Sans One', cursive;
     font-size: 28px;
+    font-weight: bold;
     color: #dddddd;
     text-shadow: 1px 1px black;
     margin-right: 10%;
