@@ -14,12 +14,10 @@ img {
     clear: both;
 }
 
+/*---------------Page-------------------*/
+
 body {
     background-image: url("../img/footer_lodyas.png");
-}
-
-/*---------------Page-------------------*/
-.wrapper{
 }
 
 .container{
@@ -52,6 +50,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .tabs div{
     text-align: center;
 }
@@ -84,6 +83,8 @@ body {
     border-radius: 20px 20px 0 0;    
 }
 
+/*-----------------MOBILE MENU--------------------*/
+
 .fixed {
     position: fixed;
     top: 0;
@@ -112,7 +113,7 @@ body {
     float: right;
 }
 
-/*--------------------NAV SECOND-----------------------------*/
+/*--------------------NAV BEAM-------------------------*/
 .nav_second{
     background-color: rgba(66, 133, 244, 0.5);
 }
@@ -153,7 +154,7 @@ body {
     border-right: 1px dashed black;
 }
 
-/*---------------------SECTION--------------------------------*/
+/*---------------------SECTION---------------------------*/
 section .container {
     color: #dddddd;
     background-color: rgba(255, 255, 255, 0);
@@ -181,7 +182,6 @@ section .container {
 .news_content{
     float: left;
     width: 60%;
-
 }
 .news_content h3 {
     font-size: 22px;
@@ -224,6 +224,8 @@ section .container {
     font-size: 14px;
     padding: 12px;
 }
+
+/*------COMMENTS PLUGIN-------*/
 .comments {
     width: 97%;
     height: 35px;
@@ -261,15 +263,13 @@ footer span{
     font-weight: bold;
     color: #dddddd;
     text-shadow: 1px 1px black;
-    margin-right: 10%;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 footer p{
-    font-size: 15px;
+    font-size: 17px;
     color: #dddddd;
     text-shadow: 1px 1px black;
     padding: 0 30px 10px 0;
-    //margin-right: 90px;
 }
 
 footer .footer_2{

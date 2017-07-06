@@ -1,3 +1,4 @@
+/*---------------RESET---------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -5,47 +6,51 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
 .clear {
     clear: both;
 }
 
-.wrapper{
-    height: 100vh;
-    width: 100vw;
-    background-image: url("../img/swirl_pattern.png");
+/*---------------Page-------------------*/
+
+body {
+    background-image: url("../img/footer_lodyas.png");
 }
+
 .container{
     max-width: 960px;
     margin: 0 auto;
 }
 
 /*---------------LOGO---------------------*/
-.logo{
-    height: 15%;
-}
-
 .logo .container {
-    height: 100%;
-    background-size: cover;    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    text-align: center;
 }
 
 .logo h1 {
-    text-align: center;
-    font-family: 'Barrio', cursive;
-    text-shadow: 2px 2px black;
-    font-size: 90px;
-    color: #1567b9;
+    display: inline-block;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 700;
+    color: #bebebe;
+    text-shadow: 3px 3px black;
+    font-size: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-/*-----------------TABY--------------------*/
+.logo i {
+    font-size: 70px;
+}
+
+/*-----------------NAV - TABY--------------------*/
 .tabs{
     display: flex;
     justify-content: center;
-    bottom: 0;
 }
+
 .tabs div{
     text-align: center;
 }
@@ -57,7 +62,7 @@
     display: inline-block;
     width: 150px;
     text-decoration: none;
-    color: white;
+    color: #dddddd;
     line-height: 36px;
 }
 
@@ -66,33 +71,55 @@
     border-radius: 20px 20px 0 0;    
 }
 .tabs div:nth-child(2){
-    background-color: rgba(52, 168, 83, 0.8);
+    background-color: rgba(66, 133, 244, 0.33);
     border-radius: 20px 20px 0 0;    
 }
 .tabs div:nth-child(3){
-    background-color: rgba(251, 188, 5, 0.8);
+    background-color: rgba(66, 133, 244, 0.33);
     border-radius: 20px 20px 0 0;    
 }
 .tabs div:nth-child(4){
-    background-color: rgba(234, 67, 53, 0.8);
+    background-color: rgba(66, 133, 244, 0.33);
     border-radius: 20px 20px 0 0;    
 }
 
-/*--------------------NAV SECOND-----------------------------*/
-.nav_second{
-    height: 4%;
+/*-----------------MOBILE MENU--------------------*/
 
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: url("../img/footer_lodyas.png");
+}
+
+.mobile_menu {
+    background-color: rgba(66, 133, 244, 0.8); 
+    text-align: center;
+    display: none;
+}
+.mobile_logo{
+    font-size: 25px;
+    line-height: 60px;
+    text-shadow: 2px 2px black;
+    color: #dddddd;
+}
+.hamburger{
+    font-size: 40px;
+    margin-right: 20px;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+    display: inline-block;
+    color: #dddddd;
+    float: right;
+}
+
+/*--------------------NAV BEAM-------------------------*/
+.nav_second{
+    background-color: rgba(66, 133, 244, 0.5);
 }
 
 .nav_second .container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(52, 168, 83, 0.8);
-    border-left: 1px solid grey;
-    border-right: 1px solid grey;
-    border-bottom: 5px solid #414141;
+    background-color: rgba(66, 133, 244, 0.8);
 }
 
 .nav_second ul {
@@ -104,81 +131,217 @@
     text-align: center;
 }
 
-.nav_second a {
-    font-size: 16px;
+.nav_second p {
+    font-size: 18px;
+    display: inline-block;
+    color: #dddddd;
+    text-shadow: 1px 1px black;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav_second i {
+    font-size: 20px;
     display: inline-block;
     text-decoration: none;
-    color: white;
+    color: #dddddd;
     text-shadow: 1px 1px black;
+}
+
+.nav_second li:nth-child(1) {
     border-right: 1px dashed black;
-    padding-left: 15px;
-    padding-right: 15px;
+}
+.nav_second li:nth-child(2) {
+    border-right: 1px dashed black;
 }
 
-.nav_second li:first-child {
-    border-left: 1px dashed black;
-}
-
-.nav_second li:first-child a {
-    
-}
-/*---------------------SECTION--------------------------------*/
-section{
-    height: 77%;
-    text-align: center;
-
-}
+/*---------------------SECTION---------------------------*/
 section .container {
-    height: 100%;
-    background-color: white;
-    overflow: auto;    
-    border-left: 1px solid grey;
-    border-right: 1px solid grey;
+    color: #dddddd;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.news {
+    background-color: rgba(255, 255, 255, 0.08);
+    margin: 15px 0 15px 0;
+    width: 100%;
+}
+
+.news img {
+    height: 350px;
+    width: 350px;
+    margin: 10px;
+    object-fit: cover;
+    float: left;
+}
+
+.news img:hover {
+    transform: scale(1.015);
+    opacity: 0.8;
+}
+
+.news_content{
+    float: left;
+    width: 60%;
+}
+.news_content h3 {
+    font-size: 22px;
+    padding: 12px;
+}
+.news_title_link {
+    text-decoration: none;
+    color:  #dddddd;
+}
+.news_title_link :visited{
+    text-decoration: none;
+    color:  #dddddd;
+}
+.news_title_link :hover{
+    opacity: 0.8;
+}
+.news_description {
+    font-size: 17px;
+    padding: 12px;
+}
+.news_author_icon{
+    display: inline-block;
+    color: #fbc25a;
+    font-size: 18px;
+    margin-left: 12px;
+}
+.news_author {
+    font-size: 12px;
+    color: #fbc25a;
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+.news_url {
+    font-size: 12px;
+    color: #44b85f;  
+    margin-left: 0%;
+    display: inline-block;    
+}
+.news_date {
+    font-size: 14px;
+    padding: 12px;
+}
+
+/*------COMMENTS PLUGIN-------*/
+.comments {
+    width: 97%;
+    height: 35px;
+    margin-left: 1.5%;
+    margin-top: 5%;
+    background-color: rgb(66, 133, 244);
+    text-align: center;
+    line-height: 32px;
+    font-size: 30px;    
+}
+.comments:hover {
+    opacity: 0.8;
+}
+
+.powr-comments {
+    display: none;
+    width: 97%;
+    margin-left: 2%;
 }
 
 /*------------------------FOOTER---------------------------------*/
 footer{
-    height: 4%;
+    background-color: rgba(66, 133, 244, 0.5);
 }
 
-footer .container {
-    height: 100%;
+footer .footer_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(66, 133, 244, 0.8);
+}
+footer span{
+    font-family: 'Julius Sans One', cursive;
+    font-size: 28px;
+    font-weight: bold;
+    color: #dddddd;
+    text-shadow: 1px 1px black;
+    padding: 10px 0;
+}
+footer p{
+    font-size: 17px;
+    color: #dddddd;
+    text-shadow: 1px 1px black;
+    padding: 0 30px 10px 0;
+}
+
+footer .footer_2{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: rgba(52, 168, 83, 0.8);
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-top: 5px solid #414141;     
-}
-footer span{
-    font-family: 'Barrio', cursive;
-    font-size: 28px;
-    margin-right: 90px;
-}
-footer p{
-    font-size: 14px;
-    margin-right: 90px;
+    background-color: rgba(66, 133, 244, 0.8);    
 }
 
 /*-----------------------Media----------------------------*/
 
 @media (max-width: 600px) {
-    .container{
-        width: 100%;
-    }
-    .logo{
-        height: 27%;
-    }
+    
+    /*---mobile menu---*/
     .tabs{
+        height: 0;
+        overflow: hidden;
+        transition: height 400ms;
+        width: 100%;
         display: block;
     }
-    section{
-        height: 65%;
+    .open{
+        height: 144px;
+        overflow:visible;
+    }
+    
+    .tabs div:nth-child(1){
+        background-color: rgba(66, 133, 244, 0.8);
+        border-radius:0;
+    }
+    .tabs div:nth-child(2){
+        background-color: rgba(66, 133, 244, 0.8);        
+        border-radius:0;
+    }
+    .tabs div:nth-child(3){
+        background-color: rgba(66, 133, 244, 0.8);        
+        border-radius:0;
+    }
+    .tabs div:nth-child(4){
+        background-color: rgba(66, 133, 244, 0.8);
+        border-radius:0;
+    }
+    .mobile_menu {
+    background-color: rgba(66, 133, 244, 0.8); 
+    text-align: center;
+    display: block;
+    }
+    .nav_second {
+        display: none;
+    }
+    
+    /*---news---*/
+    .news {
+        text-align: center;
+    }
+    
+    .news_content{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    
+    .news img {
+        width: 280px;
+        height: 280px;
+        float: none;
+    }
+    
+    a.news_img_link{
+        display: inline-block;
     }
 }
-
-
 
 
 

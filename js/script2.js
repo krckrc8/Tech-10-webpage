@@ -29,9 +29,9 @@ $(function() {
         mobile_tabs.toggleClass('open');
     })
     
-    /*-------------AJAX------------------*/
+    /*-------------AJAX-Engadget-----------------*/
     /*---variables for url---*/
-    var techUrl = 'https://newsapi.org/v1/articles?source=techradar&sortBy=latest&apiKey=52e7052a3e1341c8b763300db97b5a34';
+    var techUrl = 'https://newsapi.org/v1/articles?source=engadget&sortBy=latest&apiKey=52e7052a3e1341c8b763300db97b5a34';
 
     /*---Create my new arrays for Loops form API---*/
 
