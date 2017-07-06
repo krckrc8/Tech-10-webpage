@@ -67,11 +67,11 @@ body {
 }
 
 .tabs div:nth-child(1){
-    background-color: rgba(66, 133, 244, 0.8);
+    background-color: rgba(66, 133, 244, 0.33);
     border-radius: 20px 20px 0 0;    
 }
 .tabs div:nth-child(2){
-    background-color: rgba(66, 133, 244, 0.33);
+    background-color: rgba(66, 133, 244, 0.8);
     border-radius: 20px 20px 0 0;    
 }
 .tabs div:nth-child(3){
@@ -301,7 +301,7 @@ footer .footer_2{
         border-radius:0;
     }
     .tabs div:nth-child(2){
-        background-color: rgba(66, 133, 244, 0.8);        
+        background-color: rgba(66, 133, 244, 0.33);       
         border-radius:0;
     }
     .tabs div:nth-child(3){
