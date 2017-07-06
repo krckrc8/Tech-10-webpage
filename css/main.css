@@ -34,7 +34,8 @@ body {
 
 .logo h1 {
     display: inline-block;
-    font-family: 'Julius Sans One', cursive;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 700;
     color: #bebebe;
     text-shadow: 3px 3px black;
     font-size: 70px;
@@ -236,6 +237,7 @@ section .container {
 .comments:hover {
     opacity: 0.8;
 }
+
 .powr-comments {
     display: none;
     width: 97%;
@@ -323,6 +325,7 @@ footer .footer_2{
     .news {
         text-align: center;
     }
+    
     .news_content{
         float: none;
         display: block;
@@ -334,6 +337,7 @@ footer .footer_2{
         height: 280px;
         float: none;
     }
+    
     a.news_img_link{
         display: inline-block;
     }
