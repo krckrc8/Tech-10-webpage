@@ -38,6 +38,7 @@ $(function() {
     });
     
     
+    
     /*-------------AJAX-TechCrunch-----------------*/
     /*---variables for url---*/
     var techUrl = ' https://newsapi.org/v1/articles?source=techcrunch&sortBy=latest&apiKey=52e7052a3e1341c8b763300db97b5a34';
