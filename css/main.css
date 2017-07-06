@@ -282,11 +282,15 @@ footer .footer_2{
         width: 100%;
     }
     .tabs{
-        display: block;
+        height: 0;
+        overflow: hidden;
+        transition: height 400ms;
         width: 100%;
+        display: block;
     }
-    
-    .tabs div{
+    .open{
+        height: 144px;
+        overflow:visible;
     }
     
     .tabs div:nth-child(1){

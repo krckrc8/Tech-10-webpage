@@ -28,7 +28,7 @@ $(function() {
     var hamb = $('.hamburger');
     var mobile_tabs = $('.tabs');
     hamb.on('click', function(){
-        mobile_tabs.slideToggle(700);
+        mobile_tabs.toggleClass('open');
     })
     
     //-------------AJAX------------------
