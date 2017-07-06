@@ -348,7 +348,15 @@ footer .footer_2{
     }
 }
 
-
+#scroll_to_top {
+    color: white;
+    font-size: 30px;
+    padding: 0 9px 5px 9px;
+    border: 1px solid white;
+    position: fixed;
+    bottom: 2%;
+    right: 5%;
+}
 
 
 

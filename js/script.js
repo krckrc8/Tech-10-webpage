@@ -29,6 +29,14 @@ $(function() {
         mobile_tabs.toggleClass('open');
     })
     
+    /*---Scroll Top---*/
+    
+    $('#scroll_to_top').on('click', function(){
+        $("html, body").animate({ scrollTop: 0 }, 1000);
+        return false;
+    });
+    
+    
     /*-------------AJAX------------------*/
     /*---variables for url---*/
     var techUrl = 'https://newsapi.org/v1/articles?source=techradar&sortBy=latest&apiKey=52e7052a3e1341c8b763300db97b5a34';

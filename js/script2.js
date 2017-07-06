@@ -27,7 +27,15 @@ $(function() {
     var mobile_tabs = $('.tabs');
     hamb.on('click', function(){
         mobile_tabs.toggleClass('open');
-    })
+    });
+    
+    /*---Scroll Top---*/
+    
+    $('#scroll_to_top').on('click', function(){
+        $("html, body").animate({ scrollTop: 0 }, 1000);
+        return false;
+    });
+    
     
     /*-------------AJAX-Engadget-----------------*/
     /*---variables for url---*/
