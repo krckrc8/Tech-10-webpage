@@ -1,8 +1,7 @@
 # TECH 10 webpage
 Web site about technology !
 
-## Website TECH 10
-### DEMO: 
+## DEMO: https://krckrc8.github.io/Tech-10-webpage/
 
 
 Opis:
