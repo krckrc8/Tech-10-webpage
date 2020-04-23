@@ -5,7 +5,7 @@ Web site about technology !
 
 
 Opis:
-* Strona autorska kożystająca z zewnętrznego API
+* Strona autorska korzystająca z zewnętrznego API
 * RWD
 * Funkcjonalności dodane za pomocą JavaScript (jQuery)
 
